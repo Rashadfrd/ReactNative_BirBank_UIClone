@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react'
 import { StyleSheet,View,StatusBar, } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import HomeHeader from '../components/HomeHeader'
+import HomeInfoCard from '../components/HomeInfoCard'
 
 
 const HomeScreen = () => {
@@ -19,6 +20,7 @@ const HomeScreen = () => {
             <StatusBar />
             <View style={styles.home}>
                 <HomeHeader />
+                <HomeInfoCard />
             </View>
         </>
     )
