@@ -1,11 +1,13 @@
 import React from 'react'
 import { Text,View, TouchableOpacity, ScrollView, StyleSheet, Image } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 const HomeInfoCard = () => {
+    const navigation = useNavigation()
     return (
         <View>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={styles.prods}>
-                <TouchableOpacity style={styles.prodItem}>
+                <TouchableOpacity style={styles.prodItem} onPress={()=>{navigation.navigate('Settings')}}>
                     <Image
                     style={styles.image}
                     source={{uri:'https://pbs.twimg.com/media/Etdjdn1WYAUAukN.jpg'}} />

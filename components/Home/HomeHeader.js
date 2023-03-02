@@ -1,8 +1,10 @@
 import React from 'react'
 import { Image, TouchableOpacity,StyleSheet,View,TextInput } from 'react-native'
 import { Ionicons,Feather } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeHeader = () => {
+    const navigation = useNavigation()
     return (
         <View style={styles.header}>
              <View style={styles.headerNav}>
@@ -21,7 +23,7 @@ const HomeHeader = () => {
                     <TouchableOpacity>
                         <Ionicons style={{marginRight:15}} name="chatbubble-outline" size={26} color="black" />
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>{navigation.navigate('SettingsScreen')}}>
                         <Feather name="bell" size={26} color="black" />
                     </TouchableOpacity>
                 </View>
