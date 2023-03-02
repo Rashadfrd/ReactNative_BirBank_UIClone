@@ -1,8 +1,10 @@
 import React, { useLayoutEffect } from 'react'
 import { StyleSheet,View,StatusBar, } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import HomeHeader from '../components/HomeHeader'
-import HomeInfoCard from '../components/HomeInfoCard'
+import HomeHeader from '../components/Home/HomeHeader'
+import HomeInfoCard from '../components/Home/HomeInfoCard'
+import HomeQuickActions from '../components/Home/HomeQuickActions'
+import HomeMyProducts from '../components/Home/HomeMyProducts'
 
 
 const HomeScreen = () => {
@@ -21,6 +23,8 @@ const HomeScreen = () => {
             <View style={styles.home}>
                 <HomeHeader />
                 <HomeInfoCard />
+                <HomeQuickActions />
+                <HomeMyProducts />
             </View>
         </>
     )

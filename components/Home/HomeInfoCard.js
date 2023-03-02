@@ -1,29 +1,28 @@
 import React from 'react'
-import { Text, View, ScrollView, StyleSheet, Image } from 'react-native'
-import { MaterialIcons } from '@expo/vector-icons';
+import { Text,View, TouchableOpacity, ScrollView, StyleSheet, Image } from 'react-native'
 
 const HomeInfoCard = () => {
     return (
         <View>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={styles.prods}>
-                <View style={styles.prodItem}>
+                <TouchableOpacity style={styles.prodItem}>
                     <Image
                     style={styles.image}
                     source={{uri:'https://pbs.twimg.com/media/Etdjdn1WYAUAukN.jpg'}} />
                     <Text style={styles.infoCardText}>InfoCard info</Text>
-                </View>
-                <View style={styles.prodItem}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.prodItem}>
                     <Image
                     style={styles.image}
                     source={{uri:'https://www.kapitalbank.az/images/news/F/birkartlatehsilhaqqi1630483001.jpg'}} />
                     <Text style={styles.infoCardText}>InfoCard info</Text>
-                </View>
-                <View style={styles.prodItem}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.prodItem}>
                     <Image
                     style={styles.image}
                     source={{uri:'https://www.kapitalbank.az/images/news/F/ozbirkartin1613021805.jpg'}} />
                     <Text style={styles.infoCardText}>InfoCard info</Text>
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     )
@@ -34,20 +33,23 @@ const HomeInfoCard = () => {
         marginTop:10
     },
     image:{
-        width:150,
-        height:100,
-        borderRadius:8,
+        width:140,
+        height:78,
+        borderRadius:11,
     },
     prodItem:{
-        borderRadius:8,
-        margin:5,
-        position:'relative'
+        borderRadius:15,
+        margin:4,
+        position:'relative',
+        padding:2,
+        borderWidth:2.5,
+        borderColor:'red'
     },
     infoCardText:{
         position:'absolute',
         bottom:5,
         left:5,
-        fontSize:12,
+        fontSize:11,
         color:'#fff'
     }
 })

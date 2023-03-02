@@ -11,7 +11,7 @@ const HomeHeader = () => {
                         <Image style={styles.birbankImg} source={{uri:'https://www.kapitalbank.az/assets/static/img/menu/bblogo.png'}} />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Ionicons name="eye-outline" size={32} color="black" />
+                        <Ionicons name="eye-outline" size={30} color="red" />
                     </TouchableOpacity>
                 </View>
                 <View>
@@ -19,10 +19,10 @@ const HomeHeader = () => {
                 </View>
                 <View style={styles.headerRight}>
                     <TouchableOpacity>
-                        <Ionicons style={{marginRight:15}} name="chatbubble-outline" size={28} color="black" />
+                        <Ionicons style={{marginRight:15}} name="chatbubble-outline" size={26} color="black" />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Feather name="bell" size={28} color="black" />
+                        <Feather name="bell" size={26} color="black" />
                     </TouchableOpacity>
                 </View>
             </View>
