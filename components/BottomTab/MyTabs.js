@@ -1,8 +1,9 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeStack from '../../stacks/HomeStack'
 import MarketPlaceStack from '../../stacks/MarketPlaceStack';
-import Entypo from 'react-native-vector-icons/Entypo';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import SettingsStack from '../../stacks/SettingsStack';
+import QRScannerStack from '../../stacks/QRScannerStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,10 +20,12 @@ function MyTabs() {
           } else if (route.name === 'MarketPlace') {
             iconName = 'shopping-basket'
           } else if (route.name === 'Settings') {
-            iconName = 'dots-three-horizontal'
+            iconName = 'more-horiz'
+          } else if (route.name === 'QRScanner') {
+            iconName = 'qr-code'
           }
 
-          return <Entypo name={iconName} size={size} color={color} />;
+          return <MaterialIcons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: '#D82148',
         tabBarInactiveTintColor: 'gray',
@@ -30,6 +33,7 @@ function MyTabs() {
     >
       <Tab.Screen name="Home" options={{title:'Home'}} component={HomeStack} />
       <Tab.Screen name="MarketPlace" options={{title:'MarketPlace'}} component={MarketPlaceStack} />
+      <Tab.Screen name="QRScanner" options={{title:'QR'}} component={QRScannerStack} />
       <Tab.Screen name="Settings" options={{title:'More'}} component={SettingsStack} />
     </Tab.Navigator>
   );
