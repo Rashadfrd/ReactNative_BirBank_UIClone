@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react'
-import { StyleSheet,View,StatusBar, } from 'react-native'
+import { StyleSheet,View,StatusBar, ScrollView, } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import HomeHeader from '../components/Home/HomeHeader'
 import HomeInfoCard from '../components/Home/HomeInfoCard'
@@ -20,12 +20,12 @@ const HomeScreen = () => {
     return (
         <>
             <StatusBar />
-            <View style={styles.home}>
+            <ScrollView style={styles.home} stickyHeaderIndices={[0]}>
                 <HomeHeader />
                 <HomeInfoCard />
                 <HomeQuickActions />
                 <HomeMyProducts />
-            </View>
+            </ScrollView>
         </>
     )
   }

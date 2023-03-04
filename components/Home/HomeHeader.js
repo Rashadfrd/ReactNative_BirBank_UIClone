@@ -23,7 +23,7 @@ const HomeHeader = () => {
                     <TouchableOpacity>
                         <Ionicons style={{marginRight:15}} name="chatbubble-outline" size={26} color="black" />
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={()=>{navigation.navigate('SettingsScreen')}}>
+                    <TouchableOpacity>
                         <Feather name="bell" size={26} color="black" />
                     </TouchableOpacity>
                 </View>
@@ -40,6 +40,10 @@ const HomeHeader = () => {
 
 
   const styles = StyleSheet.create({
+    header:{
+        backgroundColor:'#f5f5f5',
+        paddingBottom:10
+    },
     headerNav:{
         flexDirection:'row',
         alignItems:'center',

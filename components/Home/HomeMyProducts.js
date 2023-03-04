@@ -42,6 +42,15 @@ const HomeMyProducts = () => {
                         <Text>0.00 <Text>AZN</Text></Text>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity activeOpacity={.8} style={styles.cardItem}>
+                    <View style={styles.cardLogoWrapper}>
+                        <Image style={styles.cardLogo} source={require('../../assets/azn.png')} />
+                    </View>
+                    <View style={styles.cardInfos}>
+                        <Text style={{fontSize:13, color:'#696969'}}>Card Account</Text>
+                        <Text>0.00 <Text>AZN</Text></Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
       </View>

@@ -9,7 +9,6 @@ const HomeStack = () => {
     return (
       <Stack.Navigator initialRoutName="HomeScreen" screenOptions={{headerShown: false}}>
          <Stack.Screen name="HomeScreen" component={HomeScreen} />
-         <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
       </Stack.Navigator>
     )
 }

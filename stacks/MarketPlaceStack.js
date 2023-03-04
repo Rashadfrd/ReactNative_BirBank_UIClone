@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator()
 
 const MarketPlaceStack = () => {  
     return (
-      <Stack.Navigator initialRoutName="MarketPlaceScreen">
+      <Stack.Navigator initialRoutName="MarketPlaceScreen" screenOptions={{headerShown: false}}>
          <Stack.Screen name="MarketPlaceScreen" component={MarketPlaceScreen} />
       </Stack.Navigator>
     )
