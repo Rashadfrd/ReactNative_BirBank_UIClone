@@ -1,4 +1,4 @@
-import { MaterialIcons, Octicons, FontAwesome5, Ionicons } from '@expo/vector-icons';
+import { MaterialIcons,MaterialCommunityIcons, Octicons, FontAwesome5,FontAwesome, Ionicons } from '@expo/vector-icons';
 
 export const finances = [
     {
@@ -64,5 +64,48 @@ export const operations = [
         id:4,
         icon:<MaterialIcons name="history" size={24} color="#D82148" />,
         text:'History'
+    },
+]
+
+export const marketplace = [
+    {
+        id:1,
+        icon:<Ionicons name="calendar" size={24} color="#D82148" />,
+        text:'Gifts for 8th of March',
+    },
+    {
+        id:2,
+        icon:<Ionicons name="flame-outline" size={24} color="#D82148" />,
+        text:'Mega Sale',
+    },
+    {
+        id:3,
+        icon:<MaterialCommunityIcons name="shoe-formal" size={24} color="#D82148" />,
+        text:'Clothes and shoes',
+    },
+    {
+        id:4,
+        icon:<MaterialIcons name="electrical-services" size={24} color="#D82148" />,
+        text:'Electronics and home appliances',
+    },
+    {
+        id:5,
+        icon:<MaterialIcons name="sports-tennis" size={24} color="#D82148" />,
+        text:'Sports and active lifestyle',
+    },
+    {
+        id:6,
+        icon:<FontAwesome name="diamond" size={24} color="#D82148" />,
+        text:'Accesories',
+    },
+    {
+        id:7,
+        icon:<MaterialCommunityIcons name="bookshelf" size={24} color="#D82148" />,
+        text:'Hobbies and books',
+    },
+    {
+        id:8,
+        icon:<FontAwesome name="pencil-square-o" size={24} color="#D82148" />,
+        text:'Office and school supplies',
     },
 ]
