@@ -26,6 +26,8 @@ const MarketPlaceHeader = () => {
 
   const styles = StyleSheet.create({
     wrapperHeader:{
+        height:100,
+        justifyContent:'center',
         backgroundColor:'#f5f5f5'
     },
     title:{

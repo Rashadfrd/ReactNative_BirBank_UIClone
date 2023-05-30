@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "kapital-ui-clone",
-    "slug": "kapital-ui-clone",
+    "name": "Birbank Clone App",
+    "slug": "Birbank Clone App",
+    "description":"This is a copy of a BirBank application.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/birbank.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/birbank-2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

@@ -17,7 +17,6 @@ import { marketplace } from '../utils/constants'
 
   const styles = StyleSheet.create({
     wrapper:{
-      paddingTop:60,
       paddingHorizontal:15
     }
   })

@@ -32,7 +32,6 @@ const HomeScreen = () => {
 
   const styles = StyleSheet.create({
     home:{
-        padding:10,
         paddingLeft:15,
         paddingRight:15
     }

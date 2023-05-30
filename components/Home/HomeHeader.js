@@ -42,7 +42,8 @@ const HomeHeader = () => {
   const styles = StyleSheet.create({
     header:{
         backgroundColor:'#f5f5f5',
-        paddingBottom:10
+        paddingBottom:10,
+        paddingTop:10
     },
     headerNav:{
         flexDirection:'row',
